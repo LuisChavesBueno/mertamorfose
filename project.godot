@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Mertamorfose"
-run/main_scene="uid://bvw3v1db2gppi"
+run/main_scene="uid://bg25s3bg6ohqs"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
