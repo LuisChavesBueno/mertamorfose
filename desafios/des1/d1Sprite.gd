@@ -82,7 +82,6 @@ func proxema_fase():
 	relogio.show()
 	audio.play()
 	for i in range(43, 0, -1): 
-		print(um_minuto)
 		if um_minuto == true: 
 			get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des2/des2.tscn")
 			return
