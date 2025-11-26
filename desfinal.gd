@@ -17,5 +17,7 @@ func tempo_relogio() -> void:
 		await get_tree().create_timer(1.0).timeout
 		relogio.text = str(i)
 	frase_termino.show()
+	relogio.hide()
+	historia.hide()
 	
 	# Depois que acabar o tempo
