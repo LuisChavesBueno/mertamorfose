@@ -8,35 +8,44 @@ extends Node2D
 @onready var desafio = $desafio
 @onready var audio = $audio
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# Esconde tudo no início
 	b1.hide()
 	b2.hide()
 	b3.hide()
 	desafio.hide()
-	
-	relogio_mecanimos()
-	
-	b1.pressed.connect(func(): resposta(b1))
-	b2.pressed.connect(func(): resposta(b2))
-	b3.pressed.connect(func(): resposta(b3))
 
-func relogio_mecanimos(): 
+	# Inicia a contagem
+	start_relogio()
+
+	# Conecta os botões
+	b1.pressed.connect(func(): resposta(1))
+	b2.pressed.connect(func(): resposta(2))
+	b3.pressed.connect(func(): resposta(3))
+
+
+func start_relogio() -> void:
 	audio.play()
-	for i in range(30,0,-1):
+
+	for i in range(30, 0, -1):
 		await get_tree().create_timer(1.0).timeout
 		relogio.text = str(i)
+
+	# Depois do tempo acabar
 	relogio.hide()
 	historia.hide()
+
 	desafio.show()
 	b1.show()
 	b2.show()
 	b3.show()
-	
-func resposta(r):
-	if r == b1: 
-		get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")
-	elif r == b2: 
-		get_tree().change_scene_to_file("res://desafios/des5/des5.tscn")
-	elif r == b3: 
-		get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")
+
+
+func resposta(botao: int) -> void:
+	match botao:
+		1:
+			get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")
+		2:
+			get_tree().change_scene_to_file("res://desafios/des5/des5.tscn")
+		3:
+			get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")

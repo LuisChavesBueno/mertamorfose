@@ -7,13 +7,15 @@ extends Node2D
 
 func _ready() -> void:
 	frase_termino.hide()
-	tempo_relogio()
-func tempo_relogio(): 
+	await tempo_relogio()  # IMPORTANTE: colocar await para funcionar no HTML5
+
+func tempo_relogio() -> void:
 	audio.play()
-	for i in range(30,0,-1):
+	
+	# Contagem regressiva
+	for i in range(30, 0, -1):
 		await get_tree().create_timer(1.0).timeout
 		relogio.text = str(i)
-	relogio.hide()
-	historia.hide()
 	frase_termino.show()
 	
+	# Depois que acabar o tempo
