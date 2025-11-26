@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://yprdqtsp0c1l"]
+
+[ext_resource type="Script" uid="uid://cr1e17h05tnkc" path="res://des5.gd" id="1_axoi5"]
+[ext_resource type="Texture2D" uid="uid://dmcnbmteore3q" path="res://cenario/guardo.png" id="2_76dm2"]
+[ext_resource type="AudioStream" uid="uid://cmb3xi6pit5ca" path="res://desafios/des4/eduardo2.mp3" id="3_76dm2"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_axoi5")
+
+[node name="Guardo" type="Sprite2D" parent="."]
+position = Vector2(641, 348.00003)
+scale = Vector2(0.8326823, 0.70410156)
+texture = ExtResource("2_76dm2")
+
+[node name="objetivo" type="Label" parent="."]
+offset_left = 349.99997
+offset_top = 10.0
+offset_right = 762.0
+offset_bottom = 33.0
+scale = Vector2(1.5403609, 1.9206963)
+text = "Qual objeto o pai jogou em Gregor durante o ataque?
+"
+
+[node name="p1" type="Button" parent="."]
+offset_left = 342.0
+offset_top = 162.99998
+offset_right = 392.0
+offset_bottom = 193.99998
+scale = Vector2(3.305424, 1.8975494)
+text = "Maçã"
+
+[node name="p2" type="Button" parent="."]
+offset_left = 356.0
+offset_top = 260.0
+offset_right = 425.0
+offset_bottom = 291.0
+scale = Vector2(2.6597612, 1.760485)
+text = "Esponja
+"
+
+[node name="p3" type="Button" parent="."]
+offset_left = 351.0
+offset_top = 351.0
+offset_right = 394.0
+offset_bottom = 382.0
+scale = Vector2(3.0735147, 1.6300648)
+text = "livro"
+
+[node name="historia" type="Label" parent="."]
+offset_left = 295.99997
+offset_top = 80.99999
+offset_right = 876.0
+offset_bottom = 103.99999
+scale = Vector2(1.3513824, 2.092296)
+text = "Gregor amava ouvir sua irmã tocar violino e imaginava pagar seus estudos."
+
+[node name="relogio" type="Label" parent="."]
+offset_left = 562.00006
+offset_top = 206.0
+offset_right = 602.00006
+offset_bottom = 229.00002
+scale = Vector2(3.2600124, 2.941387)
+
+[node name="audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_76dm2")

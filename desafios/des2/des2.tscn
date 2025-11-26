@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=3 uid="uid://pejjpjfu8c3u"]
+
+[ext_resource type="Script" uid="uid://b35en08bw1oml" path="res://desafios/des2/des_2.gd" id="1_4yr1a"]
+[ext_resource type="Texture2D" uid="uid://dmcnbmteore3q" path="res://cenario/guardo.png" id="1_tbf10"]
+[ext_resource type="Texture2D" uid="uid://dlpupntpolgen" path="res://desafios/des2/lixo-removebg-preview.png" id="3_412ie"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_4yr1a")
+
+[node name="Guardo" type="Sprite2D" parent="."]
+position = Vector2(641.5, 367.5)
+scale = Vector2(0.87434894, 0.7548828)
+texture = ExtResource("1_tbf10")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1151.0
+offset_top = 652.99994
+offset_right = 1658.0
+offset_bottom = 1161.0
+scale = Vector2(0.2844194, 0.19480483)
+icon = ExtResource("3_412ie")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 628.00006
+offset_top = 610.0
+offset_right = 646.00006
+offset_bottom = 641.0
+scale = Vector2(0.12002043, 0.110300116)
+text = "
+"
+icon = ExtResource("3_412ie")
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 1210.0
+offset_top = 50.0
+offset_right = 1228.0
+offset_bottom = 81.0
+scale = Vector2(0.09798685, 0.10637009)
+icon = ExtResource("3_412ie")
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 139.0
+offset_top = 125.0
+offset_right = 157.0
+offset_bottom = 156.0
+scale = Vector2(0.10781727, 0.11997358)
+icon = ExtResource("3_412ie")
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 5.0
+offset_top = 684.0
+offset_right = 23.0
+offset_bottom = 715.0
+scale = Vector2(0.17764695, 0.12063265)
+text = "
+"
+icon = ExtResource("3_412ie")
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 1249.0
+offset_top = 542.0
+offset_right = 1267.0
+offset_bottom = 573.0
+scale = Vector2(0.11351249, 0.110123426)
+icon = ExtResource("3_412ie")
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 1008.0
+offset_top = 664.0
+offset_right = 1026.0
+offset_bottom = 695.0
+scale = Vector2(0.15669966, 0.12015013)
+icon = ExtResource("3_412ie")
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 8.0
+offset_top = 485.0
+offset_right = 26.0
+offset_bottom = 516.0
+scale = Vector2(0.24951334, 0.23889245)
+text = "
+"
+icon = ExtResource("3_412ie")
+
+[node name="frase" type="Button" parent="."]
+offset_left = 409.0
+offset_top = 10.000004
+offset_right = 600.0
+offset_bottom = 41.000004
+scale = Vector2(2.5665035, 2.4857209)
+text = "pegar lixo no quarto de gregor"

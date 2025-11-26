@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg0h82b2cq718"]
+
+[ext_resource type="Script" uid="uid://cm8s2sdfqycpc" path="res://desafios/des4/des4.gd" id="1_kxwrk"]
+[ext_resource type="Texture2D" uid="uid://dmcnbmteore3q" path="res://cenario/guardo.png" id="2_lpit3"]
+[ext_resource type="AudioStream" uid="uid://5ukh5tkqofwi" path="res://desafios/des3/gabi.mp3" id="3_lpit3"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(29, 23)
+script = ExtResource("1_kxwrk")
+
+[node name="Guardo" type="Sprite2D" parent="."]
+position = Vector2(617, 339.00003)
+scale = Vector2(0.8646286, 0.73622775)
+texture = ExtResource("2_lpit3")
+
+[node name="historia" type="Label" parent="."]
+offset_left = 105.0
+offset_top = 67.99999
+offset_right = 684.0
+offset_bottom = 90.99999
+scale = Vector2(1.8647801, 2.7218919)
+text = "O gerente da firma aparece para cobrar Gregor por ter faltado ao trabalho."
+
+[node name="relogio" type="Label" parent="."]
+offset_left = 560.00006
+offset_top = 280.0
+offset_right = 600.00006
+offset_bottom = 329.0
+scale = Vector2(4.909413, 5.0940776)
+text = "30
+"
+
+[node name="desafio" type="Label" parent="."]
+offset_left = 202.0
+offset_top = 140.0
+offset_right = 676.0
+offset_bottom = 163.0
+scale = Vector2(1.8658571, 3.2530336)
+text = "Por que Gregor gostava tanto de ouvir sua irmã tocar violino?"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 227.0
+offset_top = 292.0
+offset_right = 541.0
+offset_bottom = 323.0
+scale = Vector2(1.8720965, 1.6847779)
+text = "A) Porque ele estudava música com ela."
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 238.00003
+offset_top = 362.00003
+offset_right = 817.0
+offset_bottom = 393.00003
+scale = Vector2(1.1810834, 1.8789582)
+text = "B) Porque a música era uma das poucas coisas que ainda o emocionavam."
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 235.0
+offset_top = 453.00003
+offset_right = 526.0
+offset_bottom = 484.00003
+scale = Vector2(1.5423177, 1.5675368)
+text = "C) Porque ele queria dançar com ela."
+
+[node name="audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_lpit3")
+volume_db = 24.0

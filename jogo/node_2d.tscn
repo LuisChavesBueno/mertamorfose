@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvw3v1db2gppi"]
+
+[ext_resource type="Texture2D" uid="uid://dmcnbmteore3q" path="res://cenario/guardo.png" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Guardo" type="Sprite2D" parent="."]
+position = Vector2(645.99994, 360.50003)
+scale = Vector2(0.8333334, 0.7021485)
+texture = ExtResource("1_wtcfe")
