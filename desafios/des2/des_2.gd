@@ -27,4 +27,4 @@ func _ready():
 func _process(delta: float): 
 	if get_child_count() == 1: 
 		print("ganouh")
-		get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des3/des_3.tscn")
+		get_tree().change_scene_to_file("res://desafios/des3/des_3.tscn")

@@ -35,8 +35,8 @@ func relogio_mecanimos():
 	
 func resposta(r):
 	if r == b1: 
-		get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des1/ds1tscn.tscn")
+		get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")
 	elif r == b2: 
-		get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des5/des5.tscn")
+		get_tree().change_scene_to_file("res://desafios/des5/des5.tscn")
 	elif r == b3: 
-		get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des1/ds1tscn.tscn")
+		get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")

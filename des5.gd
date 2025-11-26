@@ -33,8 +33,8 @@ func tempo_relogio():
 
 func resposta(r):
 	if r == p1: 
-		get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/final/final.tscn")
+		get_tree().change_scene_to_file("res://desafios/final/final.tscn")
 	elif r == p2: 
-		get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des1/ds1tscn.tscn")
+		get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")
 	else: 
-		get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des1/ds1tscn.tscn")
+		get_tree().change_scene_to_file("res://desafios/des1/ds1tscn.tscn")

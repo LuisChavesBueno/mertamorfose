@@ -20,8 +20,6 @@ extends Node2D
 var res_array: Array = []
 var botao_dica_clicado = false
 
-var um_minuto = false
-
 func _ready():
 	historia.hide()
 	relogio.hide()
@@ -82,15 +80,10 @@ func proxema_fase():
 	relogio.show()
 	audio.play()
 	for i in range(43, 0, -1): 
-		if um_minuto == true: 
-			get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des2/des2.tscn")
-			return
 		await get_tree().create_timer(1.0).timeout
 		relogio.text = str(i)
 		if i == 1: 
-			get_tree().change_scene_to_file("C:/Users/User/Documents/projetos/mertamorfose/desafios/des2/des2.tscn")
-			um_minuto = true
-
+			get_tree().change_scene_to_file("res://desafios/des2/des2.tscn")
 func dica_aparecer(): 
 	dica.text = ("1915")
 	return
